@@ -1,15 +1,5 @@
 body > header {
-	//  background: $header-bg;
-	background-color: #005a2f;
-	background-image: -webkit-gradient(linear, left center, right center, from(rgb(0, 90, 47)), to(rgb(19, 79, 145)));
-	background-image: -webkit-linear-gradient(left, rgb(0, 90, 47), rgb(19, 79, 145));
-	background-image: -moz-linear-gradient(left, rgb(0, 90, 47), rgb(19, 79, 145));
-	background-image: -o-linear-gradient(left, rgb(0, 90, 47), rgb(19, 79, 145));
-	background-image: -ms-linear-gradient(left, rgb(0, 90, 47), rgb(19, 79, 145));
-	background-image: linear-gradient(left, rgb(0, 90, 47), rgb(19, 79, 145));
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#005a2f', EndColorStr='#134f91');
-
-
+  background: $header-bg;
   h1 {
     display: inline-block;
     margin: 0;
