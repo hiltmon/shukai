@@ -109,6 +109,9 @@ task :new_post, :title do |t, args|
     post.puts "categories: "
     post.puts "---"
   end
+  # Log to Day One and open it for editing in Byword
+  %x{~/scripts/LogtoDayOne.rb "@shukaico.com Post: #{title}"}
+  %x{open "#{filename}" -a Byword}
 end
 
 # usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to "new-page.markdown")
@@ -145,6 +148,9 @@ task :new_page, :filename do |t, args|
       page.puts "footer: true"
       page.puts "---"
     end
+    # Log to Day One and open it for editing in Byword
+    %x{~/scripts/LogtoDayOne.rb "@shukaico.com Page: #{title}"}
+    %x{open "#{file}" -a Byword}
   else
     puts "Syntax error: #{args.filename} contains unsupported characters"
   end
